@@ -1,0 +1,53 @@
+
+<h1>The Hacking Pinterest</h1>
+
+<div class="center jumbotron">
+  <h2>Add Picture</h2>
+
+  <h3>
+    Push ta photo !
+  </h3>
+
+<%= form_tag '/upload', multipart: true do %>
+  <label for="file">Upload ton image !</label> <%= file_field_tag "file" %>
+  <%= submit_tag %>
+<% end %>
+</div>
+
+
+<div class="center jumbotron">
+  <h2><%= link_to image_tag("images.jpeg", alt: "Rei"),
+       'http://rubyonrails.org/' %></h2>
+
+   <h3>
+    Rei, de l'école Nanto-seiken
+  </h3>
+
+  <%= link_to "Commenter", new_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center jumbotron">
+  <h2><%= link_to image_tag("images2.jpeg") %></h2>
+
+
+  <%= link_to "Commenter", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center jumbotron">
+  <h2><%= link_to image_tag("image3.png") %></h2>
+
+  <%= link_to "Commenter", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center jumbotron">
+  <h2><%= link_to image_tag("images4.jpeg") %></h2>
+
+  <%= link_to "Commenter", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center jumbotron">
+  <h2><%= link_to image_tag("image5.png") %></h2>
+
+  <%= link_to "Commenter", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
